@@ -23,9 +23,9 @@ export default function Header() {
     <div className="header-home hidden-m-t">
         <div className="container">
             <div className="header-home-wrapper">
-                <Link to="/" className="header-home-logo">
+                <a href="/" className="header-home-logo">
                     <img src="./images/logo.png" alt="" />
-                </Link>
+                </a>
                 <div className="header-home-nav">
                     <Link to="/dashboard" onClick={() => setCurrentActive("dashboard")} className={`header-home-nav-item ${currentActive==="dashboard" ? "active" : ""}`}>
                         Dashboard
