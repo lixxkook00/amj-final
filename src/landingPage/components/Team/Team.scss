@@ -1,0 +1,81 @@
+.team{
+    padding: 50px 0;
+
+    &-ceo{
+        margin-top: 20px;
+        img{
+            max-width: 300px;
+        }
+    }
+
+    &-title{
+        margin: 20px;
+
+        .primary-gradient-text{
+            background-image: linear-gradient(180deg, #8C5945 23%, #fff 53%, #8C5945 78%);
+        }
+
+        .primary-title__line::before{
+            background-image: linear-gradient(180deg, #8C5945 23%, #fff 51%, #8C5945 78%);
+        }
+    }
+
+    &-avt{
+        height: 700px;
+    }
+
+    &-infor{
+        margin-top: 100px;
+
+        &-edu{
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #8C5945;
+            margin-top: 20px;
+        }
+
+        &-name{
+            font-size: 50px;
+            text-transform: uppercase;
+            color: #8C5945;
+            font-weight: 700;
+            margin: 12px 0;
+        }
+
+        &-job{
+            font-size: 22px;
+            color: #868686;
+        }
+
+        &-desc{
+            color: rgb(197, 197, 197);
+            margin: 8px 0;
+            line-height: 28px;
+            font-weight: 500;
+        }
+
+        &-social{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 20px;
+
+            &-item{
+                margin: 8px;
+                i{  
+                    color: #8C5945;
+                    font-size: 26px;
+                    transition: all 0.5s ease-in-out;
+                }
+
+                &:hover{
+                    cursor: pointer;
+
+                    i{
+                        transform: scale(1.3);
+                    }
+                }
+            }
+        }
+    }
+}

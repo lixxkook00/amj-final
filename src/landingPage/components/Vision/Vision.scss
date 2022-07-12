@@ -1,0 +1,19 @@
+.vision{
+    // background-image: url(../../../public/images/DOWN.png);
+    background-repeat: no-repeat;
+    padding: 70px 0;
+    overflow: hidden;
+
+    &-title{
+        justify-content: flex-end;
+        // border-bottom: 1px solid #5FB6E3;
+    }
+
+    .primary-gradient-text{
+        background-image: linear-gradient(180deg, #644ACD 23%, #fff 53%, #644ACD 78%);
+    }
+
+    .primary-title__line::before{
+        background-image: linear-gradient(180deg, #644ACD 23%, #fff 51%, #644ACD 78%);
+    }
+}

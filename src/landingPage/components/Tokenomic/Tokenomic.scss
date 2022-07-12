@@ -1,0 +1,63 @@
+.tokenomic{
+    margin: 100px 0;
+
+    &-logo{
+        padding: 0 40px;
+    }
+
+    &-title{
+        margin-bottom: 50px;
+
+        .primary-gradient-text{
+            background-image: linear-gradient(180deg, #FCCC33 23%, #fff 53%, #FCCC33 78%);
+        }
+
+        .primary-title__line::before{
+            background-image: linear-gradient(180deg, #FCCC33 23%, #fff 51%, #FCCC33 78%);
+        }
+    }
+
+    &-content{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &-name{
+            color: #3CA6DD;
+            font-size: 50px;
+            font-weight: 900;
+            letter-spacing: 8px;
+        }
+
+        &-code{
+            color: #FFC103;
+            font-size: 50px;
+            font-weight: 900;
+            letter-spacing: 8px;
+            margin-top: 20px;
+            &.primary-gradient-text{
+                background-image: linear-gradient(180deg, #FCCC33 23%, #fff 53%, #FCCC33 78%);
+            }
+        }
+
+        &-network,
+        &-price,
+        &-supply{
+            color: #ddd;
+            font-size: 28px;
+            font-weight: 800;
+            margin-top: 12px;
+        }
+
+        &-contract{
+            i{
+                margin-left: 12px;
+            }
+            .ref-title{
+                font-weight: 700;
+            }
+        }
+    }
+}

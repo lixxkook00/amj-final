@@ -1,0 +1,77 @@
+@import '../../scss/variables';
+@import '../../scss/animations';
+
+.header{
+    background-color: rgba(0, 0, 0, 0.457);
+    font-size: 20px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    &-wrapper{
+        height: 80px;  
+        align-items: center;
+    }
+
+    .logo-text{
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+
+    &-nav{
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-item{
+            width: 25%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $white;
+            font-weight: 600;
+        }
+
+        &-item.active,
+        &-item:hover{
+            cursor: pointer;
+            color: #fff;
+            -webkit-animation: glow 1s ease-in-out infinite alternate;
+            -moz-animation: glow 1s ease-in-out infinite alternate;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+    }
+
+    &-logo{
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        // img{
+        //     height: 80%;
+        //     width: auto;
+        // }
+    }
+
+    &-wallet{
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        padding: 6px 8px;
+        transition: all .5s ease-in-out;
+
+        &:hover{
+            cursor: pointer;
+            background: transparent;
+            color: $primary-dark-blue;
+        }
+    }
+}

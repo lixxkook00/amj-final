@@ -1,0 +1,38 @@
+.deposite-modal{
+    color: #000;
+
+    &-desc{
+        font-style: italic;
+        color: #2C489E;
+        text-align: center;
+        margin: 8px 0;
+    }
+
+    &-line{
+        font-weight: 600;
+        color: #2C479F;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    &-value{
+        margin: 10px 0;
+
+        
+    }
+
+    &-button{
+        margin-top: 10px;
+        width: 200px;
+        color: #fff;
+    }
+
+    input{
+        border: 1px solid #000;
+        border-radius: 20px;
+        margin-right: 10px;
+        color: #2D49A4;
+        padding-right: 8px;
+        // background-color: #FFF7EF;
+    }
+}

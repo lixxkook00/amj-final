@@ -1,0 +1,123 @@
+.tournament{
+    
+    &-title{
+        margin: 20px;
+
+        .primary-gradient-text{
+            background-image: linear-gradient(180deg, #FF0E1F 23%, #fff 53%, #FF0E1F 78%);
+        }
+
+        .primary-title__line::before{
+            background-image: linear-gradient(180deg, #FF0E1F 23%, #fff 51%, #FF0E1F 78%);
+        }
+    }
+
+    &-wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 320px;
+        margin: 100px 0;
+    }
+
+    &-item{
+        width: 33.333%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        transition: all 0.5s ease-in-out;
+
+        &:hover{
+            cursor: pointer;
+
+            .tournament-item-content{
+                transform: translateY(0);
+            }
+
+            .tournament-item-content-decs{
+                opacity: 1;
+            }
+
+            .tournament-item-content-name{
+                transform: translateX(28px)
+            }
+
+            .tournament-item-content-name::before{
+                opacity: 1;
+                width: 22px;
+            }
+        }
+
+        &-bg{
+            height: 100%;
+            width: 100%;
+
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        &-content{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.665);
+            max-width: 100%;
+            width: 350px;
+            padding: 35px 30px 29px 30px;
+            color: #fff;
+            transition: all 0.5s ease-in-out;
+            transform: translateY(70px);
+
+            &-category{
+                display: inline-block;
+                background-color: #ff0e1f;
+                padding: 3px 13px;
+                line-height: 16px;
+                vertical-align: top;
+                font-size: 13px;
+                border-radius: 4px;
+            }
+
+            &-name{
+                font-size: 20px;
+                font-weight: 800;
+                text-transform: uppercase;
+                margin: 4px 0;
+                position: relative;
+                transition: all 0.5s ease-in-out;
+
+                &::before{
+                    content: "";
+                    position: absolute;
+                    transition: all 0.5s ease-in-out;
+                    left: -28px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    height: 4px;
+                    width: 0;
+                    background-color: red;
+                    opacity: 0;
+                }
+            }
+
+            &-date{
+                display: flex;
+                align-items: center;
+
+                i{
+                    margin-right: 8px;
+                }
+            }
+
+            &-decs{
+                transition: all 0.5s ease-in-out;
+                margin-top: 10px;
+                color: #C0C0C0;
+                opacity: 0;
+            }
+        }
+    }
+
+}

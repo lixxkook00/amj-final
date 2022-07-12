@@ -1,0 +1,91 @@
+@import '../../scss/animations';
+
+.profile{
+    background-image: url(../../../public/images/bg-dashboard.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+
+    &-infor{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+
+        &-avt{
+            width: 33.333%;
+            margin-right: 20px;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        &-content{
+            flex: 1;
+        }
+
+        &-content-title{
+            font-weight: 700;
+        }
+
+        &-content-ul{
+            margin: 8px 0;
+        }
+
+        &-content-li{
+            font-style: italic;
+            font-size: 14px;
+            letter-spacing:1px;
+        }
+
+        &-content-quote{
+            letter-spacing: 2px;
+            font-style: italic;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+    }
+
+    &-flex-end{
+        display: flex;
+        align-items: end;
+    }
+
+    &-icon{
+        height: 300px;
+        // margin: 30px 100px 0;
+        margin-top: 30px;
+        background-color: #250A58;
+        position: relative;
+        
+        img{
+            height: 130%;
+            width: auto;
+            animation: logo-breathing 2s linear infinite alternate;
+        }
+    }
+
+    .control-wrapper{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        transform: translateY(50%);
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .control-item{
+        width: 28%;
+    }
+
+    .token-balance{
+        position: relative;
+        margin: 40px 0 60px;
+        padding: 10px 0 30px;
+    }
+
+    .transaction{
+        position: relative;
+        margin: 10px 0 40px;
+        padding: 10px 0 30px;
+    }
+}

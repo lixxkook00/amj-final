@@ -1,0 +1,47 @@
+
+
+@keyframes logo-breathing {
+  0% { 
+    filter: drop-shadow(0px 0px 20px #FD028D);
+    transform: translate(-50%,-50%);
+  }
+  
+  100% { 
+    filter: drop-shadow(0px 0px 0px #fd028cb7);
+    transform: translate(-50%,-51%);
+  }
+}
+
+@keyframes gradient-box {
+  0% { 
+    background-image: linear-gradient(315deg, #7950f2 5%, #f783ac 95%);
+  }
+
+  25%{
+    background-image: linear-gradient(45deg, #7950f2 5%, #f783ac 95%);
+  }
+  
+  50%{
+    background-image: linear-gradient(135deg, #7950f2 5%, #f783ac 95%);
+  }
+
+  75%{
+    background-image: linear-gradient(225deg, #7950f2 5%, #f783ac 95%);
+  }
+
+  100% { 
+    background-image: linear-gradient(315deg, #7950f2 5%, #f783ac 95%);
+  }
+}
+
+@keyframes rotate {
+  0% { 
+    transform: rotate(0)
+  }
+  
+  100% { 
+    transform: rotate(360deg)
+  }
+}
+
+

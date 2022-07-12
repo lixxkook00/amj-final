@@ -1,0 +1,90 @@
+.userinfor{
+    margin-top: 20px;
+
+    &-title{
+        font-weight: 700;
+        text-align: center;
+        margin: 40px 0 20px;
+        font-size: 34px;
+        color: #0FBEDC;
+    }
+
+    &-item{
+        padding: 12px 8px;
+        width: 100%;
+        text-align: center;
+        background-color: #250A58;
+        border: 2px solid #0FBEDC;
+        font-size: 14px;
+        font-weight: 700;
+        border-radius: 20px;
+        margin-top: 10px;
+        transition: all 0.2s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        i{
+            margin-right: 6px;
+        }
+
+        &--logout{
+            background-color: #CE3443;
+            border-color: #92232D;
+        }
+
+        &:hover{
+            cursor: pointer;
+            transform: scale(0.96);
+            color: #0FBEDC;
+        }
+
+        &.active{
+            border: 2px solid #30A4DB;
+            color: #212529;
+            background-color: #0FBEDC;
+        }
+    }
+
+    .user-form{
+        width: 100%;
+        max-width: 700px;
+        margin: 10px 0;
+    }
+
+    .form{
+        width: 100%;
+    }
+
+    .user-form-item{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .user-form-item-title{
+        // width: 120px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        color: #0FBEDC;
+    }
+    .setting-2fa-img{
+        width: 100%;
+        margin: 20px 0;
+
+        img{
+            width: 220px;
+            border: 4px solid #0FBEDC;
+        }
+    }
+
+    .text-center{
+        width: 100%;
+    }
+}
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .userinfor-item{
+        margin-top: 12px;
+    }
+}

@@ -1,0 +1,135 @@
+.roadmap{
+    background-image: url(../../images/bg-roadmap.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    // height: 100vh;
+    width: 100vw;
+    color: #fff;
+    position: relative;
+
+    &-title{
+        margin: 20px;
+
+        .primary-gradient-text{
+            background-image: linear-gradient(180deg, #3CA6DD 23%, #fff 53%, #3CA6DD 78%);
+        }
+
+        .primary-title__line::before{
+            background-image: linear-gradient(180deg, #3CA6DD 23%, #fff 51%, #3CA6DD 78%);
+        }
+    }
+
+    .container-x {
+        width: 80%;
+        padding: 50px 0;
+        margin: 0px auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .container-x:before {
+    content: '';
+        position: absolute;
+        top: 2%;
+        left: 50%;
+        margin-left: -1px;
+        width: 2px;
+        height: 94%;
+        background: #CCD1D9;
+        z-index: 1
+    }
+
+    .timeline-block {
+        width: -webkit-calc(50% + 8px);
+        width: -moz-calc(50% + 8px);
+        width: calc(50% + 8px);
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-box-pack: justify;
+        justify-content: space-between;
+        clear: both;
+    }
+
+    .timeline-block-right {
+        float: right;
+
+        h3,
+        span{
+            text-align: left;
+        }
+    }
+
+    .timeline-block-left {
+        float: left;
+        direction: rtl;
+
+        h3,
+        span{
+            text-align: right;
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .marker {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 2px solid #F5F7FA;
+        background: #3CA6DD;
+        margin-top: 10px;
+        z-index: 9999
+    }
+
+    .timeline-content {
+        width: 95%;
+        padding: 0 15px;
+        color: #666
+    }
+
+    .timeline-content h3 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 25px;
+        font-weight: 500;
+        user-select: none;
+        font-weight: 900;
+        background-image: linear-gradient(180deg, #3CA6DD 23%, #fff 53%, #3CA6DD 78%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-transform: uppercase;
+    }
+
+    .timeline-content span {
+        font-size: 15px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 20px;
+        font-style: italic;
+    }
+
+
+    @media screen and (max-width: 768px) {
+        .container-x:before {
+            left: 8px;
+            width: 2px;
+        }
+        .timeline-block {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .timeline-block-right {
+            float: none;
+        }
+
+        .timeline-block-left {
+            float: none;
+            direction: ltr;
+        }
+    }
+}

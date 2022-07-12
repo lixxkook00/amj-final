@@ -1,0 +1,212 @@
+@import '../../scss/variables';
+@import '../../scss/_animations.scss';
+
+.intro{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 60px;
+    overflow: hidden;
+    background-image: url(../../images/bg-intro.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    
+    &-wrapper{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    &-left,
+    &-right{
+        width: 600px;
+    }
+
+    &-middle{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &-logo{
+            margin-top: 40px;
+            user-select: none;
+            // transition: all 0.2s ease-in-out;
+
+            img{
+                animation: logo-breathing 1s infinite alternate;
+            }
+        }
+    }
+
+    .game{
+        position: absolute;
+        transition: all 0.5s ease-in-out;
+        overflow: hidden;
+        background-size: 100% 100%;
+        background-position: top center;
+        opacity: .6;
+        user-select: none;
+        border-radius: 4px;
+        box-shadow: 0 0 3px #1A9DE0, 0 0 5px #1A9DE0, 0 0 10px #1A9DE0, 0 0 15px #1A9DE0;
+        animation: glowing-game 1.5s infinite alternate;
+
+        &:hover{
+            cursor: pointer;
+            animation: glowing-game-hover .5s forwards;
+            z-index: 1;
+        }
+
+        // size
+        &-s{
+            width: 6%;
+            height: 8%;
+        }
+
+        &-m{
+            width: 9%;
+            height: 10%;
+        }
+
+        &-l{
+            width: 13%;
+            height: 14%;
+        }
+
+        // position
+        &-left{
+
+            &-1{
+                animation-delay: .2s;
+                top: 21%;
+                left: 9.5%;
+                background-image: url("../../images/left-1.png");
+            }
+
+            &-2{
+                animation-delay: .4s;
+                top: 19%;
+                left: 17%;
+                background-image: url("../../images/left-2.png");
+            }
+
+            &-3{
+                animation-delay: .6s;
+                top: 30%;
+                left: 29%;
+                background-image: url(../../images/left-3.png);
+            }
+
+            &-4{
+                animation-delay: .8s;
+                top: 17.5%;
+                left: 35%;
+                background-image: url(../../images/left-4.png);
+            }
+
+            &-5{
+                animation-delay: 1s;
+                top: 32%;
+                left: 14.2%;
+                background-image: url(../../images/left-5.png);
+            }
+
+            &-6{
+                animation-delay: 1.2s;
+                top: 18%;
+                left: 27.5%;
+                background-image: url(../../images/left-6.png);
+            }
+
+            &-7{
+                animation-delay: 1.3s;
+                top: 48.5%;
+                left: 24%;
+                background-image: url(../../images/left-7.png);
+            }
+
+            &-8{
+                animation-delay: 1.4s;
+                top: 48.5%;
+                left: 17%;
+                background-image: url(../../images/left-8.png);
+            }
+
+            &-9{
+                top: 65%;
+                left: 22%;
+                background-image: url(../../images/left-9.png);
+            }
+        }
+
+        &-right{
+
+            &-1{
+                animation-delay: .2s;
+                top: 21%;
+                right: 9.5%;
+                background-image: url("../../images/right-1.png");
+            }
+
+            &-2{
+                animation-delay: .4s;
+                top: 19%;
+                right: 17%;
+                background-image: url("../../images/right-2.png");
+            }
+
+            &-3{
+                animation-delay: .6s;
+                top: 30%;
+                right: 29%;
+                background-image: url(../../images/right-3.png);
+            }
+
+            &-4{
+                animation-delay: .8s;
+                top: 17.5%;
+                right: 35%;
+                background-image: url(../../images/right-4.png);
+            }
+
+            &-5{
+                animation-delay: 1s;
+                top: 32%;
+                right: 14.2%;
+                background-image: url(../../images/right-5.png);
+            }
+
+            &-6{
+                animation-delay: 1.2s;
+                top: 18%;
+                right: 27.5%;
+                background-image: url(../../images/right-6.png);
+            }
+
+            &-7{
+                animation-delay: 1.3s;
+                top: 48.5%;
+                right: 24%;
+                background-image: url(../../images/right-7.png);
+            }
+
+            &-8{
+                animation-delay: 1.4s;
+                top: 48.5%;
+                right: 17%;
+                background-image: url(../../images/right-8.png);
+            }
+
+            &-9{
+                top: 65%;
+                right: 22%;
+                background-image: url(../../images/right-9.png);
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.tournament{
+
+    &-intro{
+
+        img{
+            -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,1)));
+            mask-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+        }
+    }
+
+    &-table{
+        padding: 0;
+        border-radius: 20px;
+        margin-top: 30px;
+
+        table{
+            border-radius: 16px;
+            overflow: hidden;
+            
+            td img{
+                width: 100%;
+                max-width: 150px;
+                padding: 4px 0;
+            }
+
+            tr:nth-child(even) {
+                background-color: #250A58;
+            }
+        }
+        
+    }
+
+    .tour-td{
+        text-align-last: left;
+        padding-left: 10px;
+
+        &-title{
+            font-size: 16px;
+            font-weight: 700;
+        }
+        &-host{
+            margin-top: 8px;
+            font-size: 14px;
+        }
+        &-game{
+            font-size: 12px;
+            color: #00D5FE;
+        }
+    }
+}
+
+/* Mobile Only */
+@media (max-width: 739px) {
+    .tournament{
+
+        .tour-td-title{
+            font-size: 11px;
+            text-align: left;
+        }
+        .tour-td-host{
+            font-size: 10px;
+        }
+        table th,
+        .tour-td-game{
+            font-size: 8px;
+        }
+        td .value{
+            font-size: 8px !important;
+        }
+    }
+}

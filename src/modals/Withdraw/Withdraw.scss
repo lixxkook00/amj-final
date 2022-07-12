@@ -1,0 +1,58 @@
+.deposite-modal{
+    color: #000;
+
+    &-desc{
+        font-style: italic;
+        color: #2C489E;
+        text-align: center;
+        margin: 8px 0;
+    }
+
+    &-line{
+        font-weight: 600;
+        color: #2C479F;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    &-value{
+        margin: 10px 0;
+
+        input{
+            border: 1px solid #000;
+            border-radius: 20px;
+            margin-right: 10px;
+            padding-left: 16px;
+            flex: 1;
+            height: 46px;
+            margin: 8px 8px 8px 0;
+
+            &::placeholder {
+               color: #2D49A4 !important;
+               font-weight: 600;
+            }
+        }
+    }
+
+    &-button{
+        margin-top: 10px;
+        width: 200px;
+        color: #fff;
+    }
+}
+
+.withdraw-modal-desc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+    margin: 10px 0;
+
+    &-left {
+        color: #2C49A4;
+    }
+
+    &-right{
+        color: #FF0000;
+    }
+}

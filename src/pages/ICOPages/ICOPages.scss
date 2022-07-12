@@ -1,0 +1,451 @@
+.ico{
+    margin: 30px 0;
+
+    .total-balance{
+        font-size: 20px;
+    }
+
+    &-slider{
+        position: relative;
+        width: 100%;
+        height: 4px;
+        background-color: #fff;
+        margin: 50px 0 20px;
+
+        &-line{
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            height: 4px;
+        }
+
+        &-line-process{
+            position: absolute;
+            top: 0;
+            left: 0;
+            // width: 100%;
+            height: 100%;
+            transition: all 0.5s ease-in-out;
+            background-image: linear-gradient(315deg, #7950f2 5%, #DE18A0 95%);
+        }
+
+        &-wrapper{
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-point{
+            height: 14px;
+            width: 14px;
+            background-color: #fff;
+            border: 2px solid #fff;
+            transform: rotate(45deg);
+            transition: all 0.5s ease-in-out;
+
+            &:hover{
+                border: 2px solid #7F4EEE;
+                transform: rotate(45deg) scale(1.5);
+                cursor: pointer;
+            }
+
+            &.active{
+                transform: rotate(45deg) scale(1.5);
+                background-color: #7F4EEE;
+            }
+
+            .ico-value{
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: rotate(-45deg) translate(-50%,-130%);
+                font-size: 10px;
+                transition: all 0.2s ease;
+                opacity: 0;
+            }
+
+            &:hover .ico-value,
+            &.active .ico-value{
+                top: -100%;
+                opacity: 1;
+            }
+        }
+        
+    }
+
+    &-infor{
+        &-balance{
+            padding: 16px;
+            background-image: linear-gradient(135deg, #DE189F 5%, #636AF5 95%);
+        }
+
+        &-balance-coin{
+            width: 35%;
+            margin-right: 8px;
+            padding: 0 10%;
+        }
+
+        &-balance-middle{
+            margin: 10px 0;
+
+            &-item{
+
+                h5{
+                    font-size: 16px;
+                }
+            }
+        }
+
+        &-balance-middle-item{
+            width: 50%;
+            text-align: center;
+        }
+
+        &-balance-select{
+           position: relative;
+           margin: 0 10px;
+
+            select{
+                width: 100%;
+                padding: 10px 20px;
+                border-radius: 20px;
+                font-weight: 600;
+                color: #9B43D7;
+                -moz-appearance:none; /* Firefox */
+                -webkit-appearance:none; /* Safari and Chrome */
+                appearance:none;
+            }
+
+            &-icon{
+                position: absolute;
+                top: 50%;
+                right: 5%;
+                transform: translate(0,-50%);
+
+                i{
+                    color: #9B43D7;
+                }
+            }
+        }
+
+        &-content{
+            padding: 20px;
+            height: 100%;
+
+            &-left{
+                width: 40%;
+                margin-right: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+
+                h6{
+                    font-weight: 700;
+                    margin-bottom: 0;
+                }
+            }
+
+            &-right{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 10px 0;
+
+                &-item{
+                    // padding: 8px 0;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    font-size: 17px;
+                    &.network{
+                        align-items: flex-start;
+                    }
+
+                    span{
+                        margin-left: 4px;
+                    }
+                }
+            }
+
+            &-coin{
+                margin-bottom: 10px;
+                padding: 0 20px;
+                flex: 1;
+
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    &-content{
+        margin: 30px 0;
+
+        &-title{
+            font-weight: 600;
+            font-size: 22px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &-left{
+            &-item{
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 8px;
+    
+                &-infor{
+    
+                    .title{
+                        min-width: 100px;
+                        display: inline-block;
+                        font-weight: 600;
+                    }
+    
+                    .value{
+                        font-size: 20px;
+                        margin: 0 8px;
+                    }
+                }
+    
+                &-btn{
+                    padding: 8px 12px;
+                    background-color: #fff;
+                    color: #000;
+                    border-radius:120px;
+                    font-size: 14px;
+                    min-width: 200px;
+                    text-align: center;
+                    font-weight: 700;
+                    display: flex;
+                    align-items: center;
+
+                    input{
+                        width: 100px;
+                        flex: 1;
+                        font-weight: 700;
+                        font-size: 16px;
+                        color: #9146DF;
+                    }
+                }
+            }
+            
+            &-bonus{
+    
+                &-desc{
+                    align-items: center;
+                    justify-content: space-between;
+                    font-size: 14px;
+                    // padding: 0 10px;
+                }
+            }
+    
+            &-buy{
+                margin: 20px;
+    
+                &-main{
+                    padding: 5px 30px;
+                    justify-content: space-between;
+                    text-align: center;
+                    border-radius: 20px;
+                }
+    
+                &-main-item{
+    
+                    .title{
+                        font-size: 12px;
+                    }
+                }
+            }
+    
+            &-table{
+                border: 2px solid #fff;
+                border-radius: 20px;
+                margin-top: 5px;
+                overflow: hidden;
+    
+                tbody{
+                    display: block;
+                    height: 230px;
+                    overflow: auto;
+    
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+                }
+    
+                tbody tr:first-child{
+                    position: sticky;
+                    top: 0;
+                    background-color: #513B79;
+                }
+    
+                tbody tr {
+                    display: table;
+                    width: 100%;
+                    table-layout: fixed;
+                }
+            }
+        }
+
+        &-right{
+            height: 100%;
+
+            &-title{
+                font-weight: 600;
+                margin: 30px 0 10px;
+            }
+
+            &-value{
+                margin: 10px 0;
+                font-size: 21px;
+            }
+
+            &-process{
+                margin-bottom: 50px;
+            }
+
+            .name-token{
+                background-image: linear-gradient(180deg, #FFE5CC 23%, #fff 53%, #FFE5CC 78%);
+            }
+
+            .ref{
+                margin-top: 100px;
+            }
+        }
+
+    }
+
+}
+
+.ico-content-left-item-btn{
+    padding-right: 12px;
+    height: 50px;
+    min-width: 220px;
+    margin: 0;
+    select{
+        border: none;
+        font-weight: 800;
+        color: #513B79;
+        padding-right: 8px;
+        padding: 0;
+    }
+    .ico-infor-balance-select-icon{
+        right: 31%;
+    }
+}
+
+
+.ico-content-left-buy-main{
+    margin-bottom: 10px;
+}
+
+.ico-error{
+    width: 100%;
+    color: red;
+    font-weight: 600;
+}
+
+/* Mobile Only */
+@media (max-width: 739px) {
+    .ico-content-left{
+        margin-bottom: 20px;
+    }
+
+    .ico-infor-balance{
+        padding: 8px;
+    }
+
+    .ico-infor-content{
+        margin-top: 16px;
+        flex-direction: column;
+    }
+    .ico-infor-content-left{
+        width: 100%;
+
+        h6{
+            font-size: 20px;
+        }
+
+    }
+
+    .ico-infor-content-right{
+        span{
+            margin-left: 10px;
+        }
+    }
+
+    .value{
+        font-size: 16px;
+    }
+
+    .ico-content-left-item-infor .title,
+    .ico-content-left-item-btn{
+        min-width: unset;    
+    }
+
+    .ico-content-left-buy-main{
+        margin-bottom: 12px;
+    }
+
+    .ico-content-right-process{
+        margin-bottom: 10px;
+    }
+
+    .ico-content-right .ref{
+        margin-top: 25px;
+    }
+
+    .countdown{
+        margin-top: 20px;
+    }
+
+    .countdown-item-num{
+        font-size: 25px;
+    }
+
+    .commision-chart-desc{
+        margin: 10px 0 10px 30px;
+    }
+
+    .commision-chart-desc .amount, .commision-chart-desc .package{
+        height: 30px !important;
+        width: 30px !important;
+    }
+
+    .commision-chart-desc-item-icon{
+        margin-right: 10px !important;
+        width: 70px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .commision-chart-desc-item-name{
+        font-size: 14px;
+    }
+
+    .commision-table-first {
+
+        th:first-child{
+            width: 50px;
+            padding: 0 8px;
+        }
+
+        td{
+            min-width: unset !important;
+
+            .value{
+                font-size: 10px;
+            }
+        }
+    }
+}

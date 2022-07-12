@@ -1,0 +1,52 @@
+
+.security-modal-content{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #FFF7EF;
+    margin-top: 20px;
+}
+
+.security-modal-content-line{
+    margin: 8px 0;
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #2C49A4;
+    .strong{
+        font-weight: 600;
+        margin-right: 4px;
+    }
+
+}
+
+.security-modal-item{
+    margin: 10px 0;
+    color: #2C49A4;
+
+    &-title{
+        font-weight: 700;
+        font-size: 14px;
+        margin-left: 12px;
+    }
+
+    &-desc{
+        font-size: 10px;
+        margin-left: 12px;
+    }
+
+    &-input{
+        align-items: center;
+        background-color: #FFF7EF;
+        border-radius: 20px;
+        overflow: hidden;
+        height: 48px;
+        padding: 0 8px;
+
+        input{
+            height: 100%;
+            flex: 1;
+            background-color: #FFF7EF;
+        }
+    }
+}

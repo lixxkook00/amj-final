@@ -1,0 +1,48 @@
+.commision{
+
+    &-table-first{
+        padding: 0;
+        margin: 15px 0 30px;
+
+        td{
+            min-width: 50px;
+        }
+    }
+
+    &-chart-desc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+
+        &-item{
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+
+            &-icon{
+                margin-right: 30px;
+            }
+        }
+
+        .amount,
+        .package{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+        .package{
+            background-image: linear-gradient(180deg, #5B7BFC 18%, #90EAFD 95%);
+        }
+        .amount{
+            background-image: linear-gradient(180deg, #FF6B6B 18%, #FEBC6F 95%);
+        }
+
+        .bonus-percent{
+            width: 50px;
+            height: 4px;
+            border-radius: 10px;
+            background-image: linear-gradient(180deg, #5B7BFC 18%, #90EAFD 95%);
+        }
+    }
+}

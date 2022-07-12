@@ -1,0 +1,21 @@
+.shop{
+    margin-top: 30px;
+
+    &-control{
+        justify-content: center;
+    }
+
+    &-list{
+        margin-top: 20px;
+    }
+
+    &-item{
+        margin-bottom: 20px;
+        transition: all 0.2s ease-in-out;
+
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+    }
+}

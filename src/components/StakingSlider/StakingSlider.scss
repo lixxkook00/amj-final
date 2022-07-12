@@ -1,0 +1,67 @@
+.staking-slider{
+    height: 400px;
+    border-radius: 30px;
+    overflow: hidden;
+
+    .swiper{
+        height: 100%;
+    }
+
+    &-item-wrap{
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    img{
+        // height: 100%;
+        // width: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+/* Mobile Only */
+@media (max-width: 739px) {
+    .staking-slider{
+        height: 240px;
+    }
+
+    .staking-infor{
+        margin-top: 10px;
+    }
+
+    .staking-infor-item .value{
+        font-size: 18px;
+    }
+
+    .staking-infor-item-title{
+        // min-height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+
+    .staking-fisrt{
+        margin: 20px 0;
+    }
+
+    .staking-fisrt-left{
+        border-right: none;
+        border-bottom: 1px solid #fff;
+        padding: 0;
+        padding-bottom: 20px;
+    }
+
+    .staking-fisrt-right-item{
+        margin-bottom: 10px;
+    }
+
+    .staking-fisrt-right{
+        padding: 10px 0;
+    }
+}

@@ -1,0 +1,17 @@
+.mission{
+    // background-image: url(../../../public/images/RIGHT.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+    padding: 120px 0;
+    // margin-top: 50px;
+    overflow: hidden;
+
+    .primary-gradient-text{
+        background-image: linear-gradient(180deg, #B357EC 23%, #fff 53%, #B357EC 78%);
+    }
+
+    .primary-title__line::before{
+        background-image: linear-gradient(180deg, #B357EC 23%, #fff 51%, #B357EC 78%);
+    }
+}

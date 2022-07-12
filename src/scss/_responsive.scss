@@ -1,0 +1,206 @@
+
+@media (min-width: 1000px) and (max-width: 1444px) {
+    .mt-90{
+        margin-top: 40px !important;
+    }
+}
+
+/* PC real only */
+@media (min-width: 1200px) {
+    .hide-on-pc {
+        display: none !important;
+    }
+
+}
+
+
+/* PC only */
+@media (min-width: 1024px) {
+    .hide-on-pc {
+        display: none !important;
+    }
+
+}
+
+/* Tablet to PC low resolution */
+
+@media (min-width: 985px) and (max-width: 1200px) {
+    .hidden-low-pc{
+        display: none !important;
+    }
+
+    .ico-infor-content{
+        margin-top: 16px;
+    }
+
+    .ico-content-left-buy-main{
+        margin-bottom: 16px;
+    }
+
+    .ref-value{
+        max-width: 320px;
+    }
+}
+
+
+/* Tablet Only */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hidden-tl{
+        display: none !important;
+    }
+
+    .ico-infor-content{
+        margin-top: 20px;
+    }
+    .ico-content-left-buy-main{
+        margin-bottom: 16px;
+    }
+    .ico-content-right{
+        margin-top: 20px;
+    }
+    .ref-value{
+        max-width: 200px;
+    }
+}
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .hidden-t {
+        display: none;
+    }
+
+    .hidden-m-t {
+        display: none !important;
+    }
+
+    .ico-content-left-item{
+        flex-direction: column !important;
+        align-items: start !important;
+    }
+    .ico-content-left-item-btn{
+        margin-top: 8px !important;
+        width: 100%;
+        padding: 4px 22px !important;
+    }
+}
+
+/* Mobile Only */
+@media (max-width: 739px) {
+
+    .text-overflow{
+        max-width: 240px;
+    }
+
+    .App .intro{
+        margin-top: 0 !important;
+    }
+
+    // .primary-btn-bg{
+    //     max-width: 310px;
+    // }
+
+    td .value{
+        font-size: 11px !important;
+    }
+    .hidden-m {
+        display: none !important;
+    }
+
+    .reverse-in-mobile{
+        flex-direction: column-reverse;
+    }
+
+    .primary-title{
+        font-size: 30px;
+    }
+
+    table{
+
+        td{
+            font-size: 10px;
+        }
+
+        th{
+            font-size: 11px;
+        }
+    }
+
+    .ico-content-left-item{
+        flex-direction: column !important;
+        align-items: start !important;
+    }
+    .ico-content-left-item-btn{
+        margin-top: 8px;
+    }
+    .ico-content-left-item-btn{
+        width: 100%;
+    }
+
+    .ico-content-left-buy{
+        margin: 0 !important;
+    }
+
+    .ico-content-left-buy-main{
+        flex-direction: column;
+    }
+
+    .ico-content-left-buy-main-item{
+        margin-top: 8px;
+    }
+
+    .bonus{
+        margin-top: 0 !important;
+    }
+
+    .bonus-content-title{
+        font-size: 28px !important;
+    }
+
+    .bonus-content-value .value{
+        font-size: 22px !important;
+        word-wrap: break-word;
+    }
+
+    .token-balance table td img{
+        width: 18px;
+        margin-left: 8px;
+    }
+
+    .ref-value{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 180px;
+    }
+    .deposite-modal-amount{
+        flex-direction: column;
+    }
+
+    input{
+        // height: 60px !important;
+        padding: 10px;
+    }
+}
+
+/* 500*/
+@media (min-width: 500px) and (max-width: 742px) {
+    .hidden-500plus {
+        display: none !important;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .hidden-500{
+        display: none !important;
+    }
+}
+
+// Motherfucking Iphone 5S
+@media (max-width: 375px) {
+    .main-content{
+        width: 100% !important;
+    }
+}
+

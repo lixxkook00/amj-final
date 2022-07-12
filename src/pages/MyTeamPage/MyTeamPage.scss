@@ -1,0 +1,121 @@
+.my-team{
+    &-infor{
+        justify-content:  space-between;
+        text-align: center;
+
+        &-item{
+            padding: 4px;
+
+            &-title{
+                font-weight: 600;
+                font-size: 14px;
+            }
+
+            &-value{
+                font-size: 17px;
+                font-weight: 700;
+            }
+        }
+
+        &-item:nth-child(1) {
+            width: 40%;
+        }
+
+        &-item:nth-child(2),
+        &-item:nth-child(3) {
+            width: 30%;
+        }
+
+        &-item:not(:last-child){
+            border-right: 1px solid #9284AC;
+        }
+    }
+}
+
+.affiliate-content{
+    margin: 50px 0;
+    padding: 12px;
+    background-color: #513B79;
+    border: 2px solid #824CEB;
+    border-radius: 10px;
+}
+
+.affiliate-dd{
+    width: 100%;
+}
+
+.affiliate-item{
+    padding: 8px 4px 8px 16px;
+    border: .5px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0 10px;
+    font-weight: 600;
+
+    &-icon{
+        margin-right: 8px;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    &-content{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 739px) {
+
+    .my-team{
+        margin: 20px 0;
+    }
+
+    .my-team-infor{
+        padding: 6px;
+        margin-top: 8px;
+    }
+
+    .affiliate-item{
+        padding: 4px 2px 4px 8px;
+    }
+}
+
+
+// .affiliate-tree{
+//         font-size: 16px;
+//         margin: 20px 0;
+
+//         &-icon{
+//             font-size: 12px;
+//             margin-bottom: 2px;
+//         }
+
+//         &-id{
+//             margin-left: 10px;
+//         }
+
+//         .list-group{
+//             margin-top: 10px;
+//         }
+
+//         .list-group-item{
+//             background-color: #513B79;
+//         }
+
+//         .list-group-item.active{
+//             background-color: unset;
+//             border-color: unset;
+//             color: #000;
+//             font-weight: 500;
+//             border: none;
+//         }
+
+//         .affiliate-tree .list-group-item.active{
+//             background-color: #9645DC !important;
+//         }
+// }
+

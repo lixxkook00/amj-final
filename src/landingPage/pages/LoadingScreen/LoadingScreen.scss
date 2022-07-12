@@ -1,0 +1,29 @@
+.loading-screen{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    z-index: 100;
+    background: #00002E;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    &-wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    img{
+        height: 50px !important;
+    }
+
+    .loading{
+        margin-top: 20px;
+    }
+}
+

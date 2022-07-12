@@ -1,0 +1,158 @@
+.staking{
+    transition: all 0.5s ease-in-out;
+
+    &-infor{
+        border-bottom: 1px solid #fff;
+        border-top: 1px solid #fff;
+        margin-top: 30px;
+
+        &-item{
+            width: 33.3333%;
+            text-align: center;
+            padding: 10px 0;
+
+            .value{
+                font-size: 24px;
+            }
+        }
+    }
+
+    &-fisrt{
+        margin: 30px 0;
+        transition: all 0.5s ease-in-out;  
+
+        .primary-btn:first-child{
+            margin-right: 20px;
+        }
+
+        &-left{
+            padding: 30px;
+            border-right: 1px solid #fff;
+            transition: all 0.5s ease-in-out;  
+        }
+
+        &-right{
+            padding: 40px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+
+            &-item{
+
+                &-title{
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin-bottom: 4px;
+                    letter-spacing:1px;
+                }
+            }
+        }
+    }
+
+    &-input{
+        align-items: center;
+        background: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-top: 15px;
+        height: 40px;
+        padding: 0 14px;
+
+        &-name{
+            color: #FE7B6F;
+            font-weight: 600;
+        }
+
+        input{
+            flex: 1;
+        }
+    }
+
+    &-time{
+        transition: all 0.5s ease-in-out;
+
+        &-title{
+            font-weight: 700;
+            font-size: 22px;
+            text-align: center;
+            margin: 20px 0 10px;
+        }
+
+        &-wrapper{
+            margin: 0 30px;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 2px solid #5575F6;
+        }
+
+        &-item{
+            width: 33.333%;
+            text-align: center;
+            padding: 20px 0;
+            // border-radius: 18px;
+
+            &-num{
+                font-size: 22px;
+                font-weight: 700;
+            }
+
+            &-text{
+                font-size: 12px;
+            }
+
+            &:hover{
+                cursor: pointer;
+            }
+            
+            &:hover,
+            &.active{
+                background-image: linear-gradient(180deg, #5575F6 0%, #70A7F9 52%);
+            }
+        }
+    }
+
+    &-buttons{
+        margin-top: 30px;
+        .primary-btn{
+            width: 60%;
+        }
+    }
+}
+
+/* Mobile Only */
+@media (max-width: 739px) {
+    .staking-fisrt-left{
+        padding: 16px 8px;
+    }
+
+    .staking-fisrt-left{
+        border-right: none;
+        border-bottom: 1px solid #fff;
+    }
+    .staking-infor{
+        flex-direction: column;
+    }
+
+    .staking-infor-item{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .staking-infor-item-title{
+        margin-right: 8px;
+        font-weight: 600;
+    }
+    .staking-infor-item-value{
+        flex: 1;
+        text-align: left;
+    }
+
+    .staking-time-wrapper{
+        margin: 0;
+    }
+
+    .countdown-item-text{
+        font-size: 12px;
+    }
+}

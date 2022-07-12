@@ -1,0 +1,81 @@
+@import '../../scss/variables';
+
+.token-allocation{
+    // background-image: url(../../../public/images/story-bonus-right.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 100px 0 100px;
+
+    color: #fff;
+
+    &-title{
+        margin-bottom: 50px;
+
+        .primary-gradient-text{
+            background-image: linear-gradient(180deg, #6FD6C2 23%, #fff 53%, #6FD6C2 78%);
+        }
+
+        .primary-title__line::before{
+            background-image: linear-gradient(180deg, #6FD6C2 23%, #fff 51%, #6FD6C2 78%);
+        }
+    }
+
+    .canvasjs-chart-credit{
+        display: none;
+    }
+
+    &-chart{
+        position: relative;
+
+        .free-chartjs{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 40px;
+            width: 100px;
+            background-color: $primary-dark-blue;
+            z-index: 2;
+        }
+    }
+
+    &-percent{
+        text-align: center;
+
+        &-num{
+            font-size: 55px;
+            font-weight: 500;
+
+            &.dev{
+                color: #07BAF3;
+            }
+            &.adv{
+                color: #6FD6C2;
+            }
+            &.mar{
+                color: #FFC002;
+            }
+            &.liqui{
+                color: #F29609;
+            }
+            &.hybri{
+                color: #FFEF85;
+            }
+            &.reward{
+                color: #A891F9;
+            }
+            &.network{
+                color: #C55ACA;
+            }
+            &.burn{
+                color: #FF536C;
+            }
+        }
+
+        &-name{
+            min-height: 80px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+}

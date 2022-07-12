@@ -1,0 +1,76 @@
+.bonus{
+    margin-top: 50px;
+    &-content{
+        padding-top: 10px !important;
+        margin-top: 10px;
+    }
+
+    &-content-title{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    &-content-value{
+        font-size: 22px;
+        text-align: center;
+        margin: 10px 0;
+        font-weight: 700;
+    }
+}
+
+.profile-infor-content-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    i{
+        color: #513B79;
+    }
+    
+    .ref-btn{
+        background-color: #FAF1FE;
+        padding: 8px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Mobile Only */
+@media (max-width: 739px) {
+    .profile-icon{
+        height: 250px;
+        margin-bottom: 20px;
+
+        img{
+            height: 110%;
+        }
+    }
+
+    .profile-infor{
+        margin-bottom: 20px;
+    }
+
+    .profile .token-balance{
+        margin: 10px 0 30px;
+    }
+
+    .profile .control-item{
+        width: 32%;
+    }
+
+    .view-more{
+        min-width: 240px;
+    }
+
+    .transaction{
+
+        table tr td:first-child{
+            width: 40px;
+            padding: 0 4px;
+        }
+    }
+
+}
