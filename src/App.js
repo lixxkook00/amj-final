@@ -23,7 +23,13 @@ function App() {
         <Header />
       }
 
-      <HeaderMobile />
+      {
+        pathname!=="/"
+        &&
+        <HeaderMobile />
+      }
+
+      
 
       <Router />
 

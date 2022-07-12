@@ -17,11 +17,11 @@ import Tokenomic from '../../components/Tokenomic'
 import TokenAllocation from '../../components/TokenAllocation'
 import Mission from '../../components/Mission'
 import Roadmap from '../../components/Roadmap'
-import Tournament from '../../components/Tournament';
-import Matches from '../../components/Matches';
 import Team from '../../components/Team'
 import Partners from '../../components/Partners'
 import Footer from '../../components/Footer'
+
+import Logo from '../../images/logo.png'
 
 import {Link} from 'react-router-dom'
 
@@ -123,7 +123,7 @@ export default function LandingPage() {
                     <div className="col-xl-12">
                         <div className="header-mobile">
                             <div className="header-mobile-logo">
-                                <img className="img-height" src="/images/logo.png" alt="" />
+                                <img className="img-width " src={Logo} alt="" />
                             </div>
 
                             <div className="header-mobile-icon">
@@ -152,10 +152,6 @@ export default function LandingPage() {
         <Vision />
 
         <Mission />
-
-        <Tournament />
-
-        <Matches />
 
         <Roadmap />
 

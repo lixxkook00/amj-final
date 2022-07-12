@@ -4,7 +4,7 @@ import './Tokenomic.scss'
 import coinImg from '../../images/coin.png'
 
 
-export default function Tokenomic() {
+export default function  Tokenomic() {
 
     const [iconCopy,setIconCopy] = useState("fa-solid fa-copy")
 
@@ -20,7 +20,7 @@ export default function Tokenomic() {
   return (
     <div className="tokenomic">
         <div className="container">
-            <div className="row col-xl-12">
+            <div className="row col-xl-12 centering">
                 <div className="tokenomic-title centering">
                     <div className="primary-title primary-gradient-text">
                         Tokenomic
@@ -34,23 +34,19 @@ export default function Tokenomic() {
                 <div className="col-xl-6 col-12">
                     <div className="tokenomic-content">
                         <div className="tokenomic-content-name">
-                            ​<img className="img-width" src="./images/logo.png" alt="" />
-                        </div>
-
-                        <div className="tokenomic-content-code primary-gradient-text">
-                            ​​AMJ
+                            Crystals
                         </div>
 
                         <div className="tokenomic-content-supply">
-                            Total Supply​​ : 81,000,000
+                            Total Supply: 1,000,000
                         </div>
 
                         <div className="tokenomic-content-network">
-                            Contract-Network (​BEP-20)
+                            Network (BEP-20)
                         </div>
 
                         <div className="tokenomic-content-price">
-                            Initial Price : $0.08
+                            Initial Price: $1
                         </div>
 
                         <div className="tokenomic-content-contract">
@@ -59,9 +55,9 @@ export default function Tokenomic() {
                                     Contract:
                                 </div>
                                 <div className="ref-value text-overflow">
-                                    0x8B8617f9BE6b9946e9a6fFd65Ba6f6906B62a423
+                                    0xamj3423423423423433423423
                                 </div>
-                                <div className="ref-btn" onClick={() => handleCopy("0x8B8617f9BE6b9946e9a6fFd65Ba6f6906B62a423")}>
+                                <div className="ref-btn" onClick={() => handleCopy("0xamj3423423423423433423423")}>
                                     <i className={iconCopy}></i>
                                 </div>
                             </div>

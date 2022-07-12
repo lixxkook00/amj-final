@@ -30,15 +30,15 @@ export default function Team() {
                             </div>
 
                             <div className="team-infor-name">
-                                MARK BUTCHER
+                                MARK MARK
                             </div>
 
                             <div className="team-infor-job">
-                                CEO - MAMJ Technology Research & Investment Ltd
+                                CEO - MARK
                             </div>
 
                             <div className="team-infor-desc">
-                                Utilizing many of the same tactics commonly used today. From my then unprecedented guerrilla operating and branding techniques to the continuously innovative ways in which I use brand integration, and remain a cutting edge business strategist.
+                               I think it's very important to have a feedback loop, where you're constantly thinking about what you've done and how you could be doing it better. I think that's the single best piece of advice: constantly think about how you could be doing things better and questioning yourself.
                             </div>
 
                             {/* <div className="team-infor-social">

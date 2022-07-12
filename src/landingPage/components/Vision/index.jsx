@@ -9,7 +9,7 @@ export default function Vision() {
         <div className="container">
             <div className="row">
 
-                <div className="col-xl-6 flex-column">
+                <div className="col-xl-6 col-lg-6 flex-column">
                     <div className="vision-title centering-left">
                         <div className="primary-title primary-gradient-text">
                             Vision
@@ -17,13 +17,13 @@ export default function Vision() {
                         </div>
                     </div>
                     <div className="paragraph">
-                        In the short term, we aspire to become a multi-channel, cross-platform gaming environment that attracts many exciting games and tournaments. The venue for a professional esports tournament in the digital space. We create a playground for esports teams to have explosive confrontations.
+                        In the short term, it will become a platform to provide NFT certificates of prestigious and highly secure gems. Make sure the gems you buy are always the best, real gems. Moreover, when you buy it, you can increase your profit through the market mechanism.
                         <br />
-                        In the long term, AMJ targets becoming one of the top 5 game service management enterprises in the world. Promotional support for potential games. We will build a metaverse exclusively for gamers.
+                        In the long term: open up the gem ecosystem and community. Where people can interact and exchange gems with each other. Create multiple applications for gem certificates.
                     </div>
                 </div>
 
-                 <div className="col-xl-6 centering">
+                 <div className="col-xl-6 col-lg-6 centering">
                     <img className="img-width" src={img} alt="" />
                 </div>
             </div>

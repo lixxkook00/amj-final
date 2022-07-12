@@ -20,25 +20,25 @@ export default function Footer() {
             <div className="footer-infor">
                 <div className="footer-infor-social">
                     <div className="footer-infor-social-icon centering">
-                        <a href="https://twitter.com/AMJ_glAMJl">
+                        <a href="">
                             <i className="fa-brands fa-twitter"></i>
                         </a>
                     </div>
 
                     <div className="footer-infor-social-icon footer-infor-social-icon-second centering">
-                        <a href="https://t.me/AMJofficial">
+                        <a href="">
                             <i className="fa-brands fa-telegram"></i>
                         </a>
                     </div>
 
                     <div className="footer-infor-social-icon centering">
-                        <a href="https://t.me/AMJchannel">
+                        <a href="">
                             <i className="fa-brands fa-telegram"></i>
                         </a>
                     </div>
 
                     <div className="footer-infor-social-icon centering">
-                        <a href="https://www.youtube.com/channel/UCNttJe0mMSCK_d5I17Gl5ug">
+                        <a href="">
                             <i className="fa-brands fa-youtube"></i>
                         </a>
                     </div>

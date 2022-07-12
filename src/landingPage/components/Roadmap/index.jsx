@@ -18,59 +18,40 @@ export default function Roadmap() {
                     <div className="timeline-block timeline-block-left">
                         <div className="marker"></div>
                         <div className="timeline-content">
-                            <h3>12/2022</h3>
-                            <span>Application via Android and IOS</span>
+                            <span>Brainstorm project ideas</span>
+                            <span>Complete project mechanism</span>
+                            <span>Build the foundation of the project.</span>
                         </div>
                     </div>
 
                     <div className="timeline-block timeline-block-right">
                         <div className="marker"></div>
                         <div className="timeline-content">
-                            <h3>Q4/2023</h3>
-                            <span>Beta version of gaming marketplace platform</span>
+                            <span>Build Whitepaper v1</span>
+                            <span>Build the project's website</span>
+                            <span>Upload to the project testnet</span>
                         </div>
                     </div>
 
                     <div className="timeline-block timeline-block-left">
                         <div className="marker"></div>
                         <div className="timeline-content">
-                            <h3>Q1/2024</h3>
-                            <span>Official Launching</span>
+                            <span>Round private-sale</span>
+                            <span>Pre-sale round</span>
+                            <span>Public-sale</span>
+                            <span>Project Mainnet</span>
                         </div>
                     </div>
 
                     <div className="timeline-block timeline-block-right">
                         <div className="marker"></div>
                         <div className="timeline-content">
-                            <h3>Q2/2024</h3>
-                            <span>Massive community marketing, partner bonding and run business</span>
+                          <span>Open NFT market for the projects</span>
+                          <span>Complete staking mechanisms</span>
+                          <span>Build the project's metaverses</span>
+                          <span>Development joins Metaverse via VR devices</span>
                         </div>
                     </div>
-
-                    <div className="timeline-block timeline-block-left">
-                        <div className="marker"></div>
-                        <div className="timeline-content">
-                            <h3>2025</h3>
-                            <span>Research on 3D new platform</span>
-                        </div>
-                    </div>
-
-                    <div className="timeline-block timeline-block-right">
-                        <div className="marker"></div>
-                        <div className="timeline-content">
-                            <h3>2026</h3>
-                            <span>Release metaverse platform and new business model</span>
-                        </div>
-                    </div>
-
-                    <div className="timeline-block timeline-block-left">
-                        <div className="marker"></div>
-                        <div className="timeline-content">
-                            <h3>2027</h3>
-                            <span>IPO on London Stock Exchange</span>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>

@@ -3,6 +3,14 @@
     color: #fff;
     z-index: 10;
 }
+
+.header-mobile-logo{
+    img{
+        height: 100% !important;
+        width: auto !important;
+    }
+}
+
 .scroll-to-top{
     position: fixed;
     bottom: 20px;

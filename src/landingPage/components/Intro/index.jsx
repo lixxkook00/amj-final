@@ -1,6 +1,8 @@
 import React , {useRef, useState} from 'react'
 import './Intro.scss'
 
+import Logo from '../../images/logo-circle.png'
+
 export default function Intro() {
     const intro = useRef(0);
     
@@ -34,8 +36,8 @@ export default function Intro() {
                     <div className="game game-m game-left-9"></div>
                 </div>
                 <div className="intro-middle">
-                    <div className="intro-middle-logo" style={{transform: `translate(${xLogo}px,${yLogo}px)`,transformStyle: 'preserve-3d'}}>
-                        <img className="img-width" src="./images/logo.png" alt="" />
+                    <div className="intro-middle-logo centering" style={{transform: `translate(${xLogo}px,${yLogo}px)`,transformStyle: 'preserve-3d'}}>
+                        <img className="img-width" src={Logo} alt="" />
                     </div>
                 </div>
                 <div className="intro-right">

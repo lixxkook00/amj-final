@@ -39,6 +39,7 @@
             // transition: all 0.2s ease-in-out;
 
             img{
+                width: 50% !important;
                 animation: logo-breathing 1s infinite alternate;
             }
         }
@@ -150,62 +151,62 @@
                 animation-delay: .2s;
                 top: 21%;
                 right: 9.5%;
-                background-image: url("../../images/right-1.png");
+                background-image: url(../../images/left-1.png);
             }
 
             &-2{
                 animation-delay: .4s;
                 top: 19%;
                 right: 17%;
-                background-image: url("../../images/right-2.png");
+                background-image: url(../../images/left-2.png);
             }
 
             &-3{
                 animation-delay: .6s;
                 top: 30%;
                 right: 29%;
-                background-image: url(../../images/right-3.png);
+                background-image: url(../../images/left-3.png);
             }
 
             &-4{
                 animation-delay: .8s;
                 top: 17.5%;
                 right: 35%;
-                background-image: url(../../images/right-4.png);
+                background-image: url(../../images/left-4.png);
             }
 
             &-5{
                 animation-delay: 1s;
                 top: 32%;
                 right: 14.2%;
-                background-image: url(../../images/right-5.png);
+                background-image: url(../../images/left-5.png);
             }
 
             &-6{
                 animation-delay: 1.2s;
                 top: 18%;
                 right: 27.5%;
-                background-image: url(../../images/right-6.png);
+                background-image: url(../../images/left-6.png);
             }
 
             &-7{
                 animation-delay: 1.3s;
                 top: 48.5%;
                 right: 24%;
-                background-image: url(../../images/right-7.png);
+                background-image: url(../../images/left-7.png);
             }
 
             &-8{
                 animation-delay: 1.4s;
                 top: 48.5%;
                 right: 17%;
-                background-image: url(../../images/right-8.png);
+                background-image: url(../../images/left-8.png);
             }
 
             &-9{
                 top: 65%;
                 right: 22%;
-                background-image: url(../../images/right-9.png);
+                background-image: url(../../images/left-9.png);
             }
         }
     }
